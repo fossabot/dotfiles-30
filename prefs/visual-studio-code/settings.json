@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "venv\\Scripts\\python.exe",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.rulers": [80]
+}
