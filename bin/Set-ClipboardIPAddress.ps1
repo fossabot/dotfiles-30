@@ -1,0 +1,1 @@
+Set-Clipboard -Value (Get-NetIPAddress -InterfaceAlias Wi-Fi -AddressFamily IPv4 | Select-Object IPAddress).ipaddress
