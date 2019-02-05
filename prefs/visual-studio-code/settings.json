@@ -1,4 +1,7 @@
 {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.rulers": [80]
+    "editor.rulers": [80],
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false
 }
