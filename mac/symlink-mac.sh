@@ -1,7 +1,7 @@
 #!/bin/bash
 ln -sf $(pwd)/bin $HOME
-ln -sf $(pwd)/git/.gitconfig $HOME/.gitconfig
-ln -sf $(pwd)/git/.gitaliases $HOME/.gitaliases
+ln -sf ../prefs/git/.gitconfig $HOME/.gitconfig
+ln -sf ../prefs/git/.gitaliases $HOME/.gitaliases
 
 mkdir -p $HOME/.ssh
 chmod 700 $HOME/.ssh
