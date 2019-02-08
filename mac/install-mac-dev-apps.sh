@@ -15,14 +15,13 @@ if [[ $(brew --version) ]] ; then
     brew update
 else
     echo "Attempting to install Homebrew"
-    ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-brew update && brew cleanup && brew cask cleanup
+brew update && brew cleanup
 
-brew tap fisherman/tap
 brew tap caskroom/cask
 
 brew install \
@@ -30,19 +29,7 @@ brew install \
     ruby \
     go \
     python \
-    jq \
-    ansible \
-    awscli \
-    csshX \
-    hub \
-    diff-so-fancy \
-    packer \
-    terraform \
-    vault \ 
-    fzf \
-    parallel
-
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
+    awscli 
 
 ## install fish shell
 #brew install \
@@ -61,7 +48,6 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 
 brew cask install \
     docker \
-    java \
     virtualbox \
     visual-studio-code 
 
@@ -69,7 +55,7 @@ brew cask install \
 ln -sf /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
 
 code --install-extension PeterJausovec.vscode-docker
-code --install-extension haaaad.ansible
+code --install-extension dotjoshjohnson.xml
 
 ln -sf $(pwd)/prefs/osx/visual-studio-code/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 

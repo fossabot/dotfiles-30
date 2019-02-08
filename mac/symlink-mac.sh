@@ -1,7 +1,10 @@
 #!/bin/bash
+
+GIT_PREFS_PATH=$(cd ../prefs/git; pwd)
+
 ln -sf $(pwd)/bin $HOME
-ln -sf ../prefs/git/.gitconfig $HOME/.gitconfig
-ln -sf ../prefs/git/.gitaliases $HOME/.gitaliases
+ln -sf $GIT_PREFS_PATH/.gitconfig $HOME/.gitconfig
+ln -sf $GIT_PREFS_PATH/.gitaliases $HOME/.gitaliases
 
 mkdir -p $HOME/.ssh
 chmod 700 $HOME/.ssh
