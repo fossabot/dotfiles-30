@@ -4,6 +4,7 @@ GIT_PREFS_PATH=$(cd ../prefs/git; pwd)
 
 ln -sf $(pwd)/bin $HOME
 ln -sf $GIT_PREFS_PATH/.gitconfig $HOME/.gitconfig
+ln -sf $GIT_PREFS_PATH/.gitignore_global $HOME/.gitignore_global
 ln -sf $GIT_PREFS_PATH/.gitaliases $HOME/.gitaliases
 
 mkdir -p $HOME/.ssh

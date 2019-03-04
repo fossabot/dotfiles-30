@@ -1,6 +1,9 @@
 # Adds symlink for .gitaliases in homepath
 New-Item -Path $env:HOMEPATH\.gitaliases -ItemType SymbolicLink -Value ..\prefs\git\.gitaliases
 
+# Adds symlink for .gitignore_global in homepath
+New-Item -Path $env:HOMEPATH\.gitignore_global -ItemType SymbolicLink -Value ..\prefs\git\.gitignore_global
+
 # Adds symlink for \bin in homepath
 New-Item -Path $env:HOMEPATH\bin -ItemType SymbolicLink -Value .\bin
 
