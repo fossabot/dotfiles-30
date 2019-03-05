@@ -1,0 +1,4 @@
+Host *
+    PreferredAuthentications publickey,keyboard-interactive
+    ServerAliveInterval 120
+    ServerAliveCountMax 30
