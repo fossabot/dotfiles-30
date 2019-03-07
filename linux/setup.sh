@@ -35,7 +35,7 @@ command_exists() {
 
 get_distribution() {
 	lsb_dist=""
-	# Every system that we officially support has /etc/os-release
+	# Every system that I use has /etc/os-release
 	if [ -r /etc/os-release ]; then
 		lsb_dist="$(. /etc/os-release && echo "$ID")"
 	fi
@@ -76,11 +76,11 @@ do_setup() {
 	# Run setup for each distro accordingly
 	case "$lsb_dist" in
 		ubuntu|debian|raspbian)
-			$sh_c './Debian/setup.sh'
+			$sh_c './debian/setup.sh'
 			exit 0
 			;;
 		centos|fedora|rhel|ol|sles)
-			$sh_c './RHEL/setup.sh'
+			$sh_c './rhel/setup.sh'
 			exit 0
 			;;
 	esac
