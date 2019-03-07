@@ -3,10 +3,10 @@ ROOT="$(pwd)"
 
 set -e
 
-"$ROOT/symlink-mac.sh"
-"$ROOT/config-mac.sh"
-"$ROOT/install-mac-dev-apps.sh"
-"$ROOT/config-git-mac.sh"
+"$ROOT/symlink-rhel.sh"
+"$ROOT/config-rhel.sh"
+"$ROOT/install-rhel-dev-apps.sh"
+"$ROOT/config-git-rhel.sh"
 
 echo All Done!
 echo Restarting shell

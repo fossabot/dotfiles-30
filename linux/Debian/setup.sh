@@ -3,10 +3,10 @@ ROOT="$(pwd)"
 
 set -e
 
-"$ROOT/symlink-mac.sh"
-"$ROOT/config-mac.sh"
-"$ROOT/install-mac-dev-apps.sh"
-"$ROOT/config-git-mac.sh"
+"$ROOT/symlink-debian.sh"
+"$ROOT/config-debian.sh"
+"$ROOT/install-debian-dev-apps.sh"
+"$ROOT/config-git-debian.sh"
 
 echo All Done!
 echo Restarting shell
