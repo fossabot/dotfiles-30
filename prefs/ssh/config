@@ -1,3 +1,5 @@
+Include config.d/*
+
 Host *
     PreferredAuthentications publickey,keyboard-interactive
     ServerAliveInterval 120
