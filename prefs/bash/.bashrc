@@ -19,6 +19,7 @@ export PS1
 PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 export PATH
 
+# Sets the GPG TTY to default TTY
 export GPG_TTY=$(tty)
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
@@ -29,10 +30,11 @@ shopt -s cdable_vars
 export repos=$HOME/Repositories
 export Repos=$HOME/Repositories
 
-# Creates disposable Docker containers
+# Docker specific aliases
 alias tmpsh="docker run -it --rm ubuntu /bin/bash" # Disposable Ubuntu bash shell
 alias dockersay="docker run --rm docker/whalesay cowsay" # Disposable Whalesay
-alias dsu='docker run --rm -it -v="/:/opt" --name Docker_SU ubuntu /bin/bash -c "(apt-get update -y >/dev/null 2>&1; apt-get install vim.tiny -y >/dev/null 2>&1) & /bin/bash"' # Disposable shell that mounts root
+alias dsudo='docker run --rm -it -v="/:/opt" --name Docker_SU ubuntu /bin/bash -c "(apt-get update -y >/dev/null 2>&1; apt-get install vim.tiny -y >/dev/null 2>&1) & /bin/bash"' # Disposable shell that mounts root
+alias dcu='docker-compose up --build -d' # Builds and brings up a detatched container using docker-compose
 
 # Attempt at creating a chromium instance without any user data. Essentially attempt at running chromium in guest mode
 #alias tmpchrome="TMP_DIR=$RANDOM && chromium-browser --user-data-dir=$TMP_DIR --bwsi & rm -rf $TMP_DIR"
