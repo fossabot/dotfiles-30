@@ -77,5 +77,6 @@
 # fuzzy add using fzf
 	fza = "!git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o git add"	
 
-#r checkstatuses of all repos in ~/Repositories
+# checkstatuses of all repos in ~/Repositories
 	statall = "!f() { for dir in ~/Repositories/*; do (cd $dir && pwd && git status && echo); done }; f"
+	fido = "!f() { for dir in ~/Repositories/*; do (cd $dir && pwd && git fetch && echo); done }; f"
