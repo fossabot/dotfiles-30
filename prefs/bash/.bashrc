@@ -35,9 +35,9 @@ function dcsh() {
     if [ $# -eq 0 ]
     then
         echo "No service provided"
-        exit 1
+    else
+        docker-compose exec $1 /bin/bash
     fi
-    docker-compose exec $1 /bin/bash
 }
 
 alias tmpsh="docker run -it --rm ubuntu /bin/bash" # Disposable Ubuntu bash shell
