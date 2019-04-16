@@ -39,6 +39,7 @@ function dcsh() {
         docker-compose exec $1 /bin/bash
     fi
 }
+export -f dcsh
 
 alias tmpsh="docker run -it --rm ubuntu /bin/bash" # Disposable Ubuntu bash shell
 alias dockersay="docker run --rm docker/whalesay cowsay" # Disposable Whalesay
