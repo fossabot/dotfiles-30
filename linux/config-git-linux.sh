@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Generates new .gitignore_global file
-cat $HOME/.gitignore_common.d/{Backup.*,GPG.*,Linux.*} > $HOME/.gitignore_global
+cat $HOME/.gitignore_common.d/{Backup.*,GPG.*,VisualStudioCode.*,Linux.*} > $HOME/.gitignore_global
 
 # Source common configurations
 source ../prefs/git/.gitconfig_common
