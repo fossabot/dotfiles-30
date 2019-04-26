@@ -18,6 +18,8 @@ ln -sf $GIT_PREFS_PATH/.gitignore_languages.d $HOME
 ln -sf $BASH_PREFS_PATH/.bashrc $HOME/.bashrc
 
 # Creates symlinks for VSCode in $HOME/.config/Code/User
+mkdir -p $HOME/.config/Code/User
+chmod 755 $HOME/.config/Code/User
 ln -sf $VSCODE_PREFS_PATH/keybindings.json $HOME/.config/Code/User
 ln -sf $VSCODE_PREFS_PATH/settings.json $HOME/.config/Code/User
 
