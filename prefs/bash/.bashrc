@@ -5,6 +5,12 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Return nothing for non-interactive shell such as scp
+if [[ $- != *i* ]] ; then
+	# Shell is non-interactive.  Be done now!
+	return
+fi
+
 # Source only ID from /etc/os-release
 if [ -f /etc/os-release ]; then
         source <(grep '^ID=' /etc/os-release)
