@@ -50,10 +50,12 @@ export -f dcsh
 alias tmpsh="docker run -it --rm ubuntu /bin/bash" # Disposable Ubuntu bash shell
 alias dockersay="docker run --rm docker/whalesay cowsay" # Disposable Whalesay
 alias dsudo='docker run --rm -it -v="/:/opt" --name Docker_SU ubuntu /bin/bash -c "(apt-get update -y >/dev/null 2>&1; apt-get install vim.tiny -y >/dev/null 2>&1) & /bin/bash"' # Disposable shell that mounts root
+alias dc='docker-compose' # Simple alias for docker-compose
 alias dcu='docker-compose up --build -d' # Builds and brings up a detatched container using docker-compose
-alias dcd='docker-compose down' # Brings down container using docker-compose
+alias dcd='docker-compose down -v' # Brings down container using docker-compose
 alias dcr='docker-compose restart' # Restarts service using docker-compose
 alias dclog='docker-compose logs -f' # Shows logs for container using docker-compose
+alias dcps='docker-compose ps' # Shows running processes using docker-compose
 
 # Attempt at creating a chromium instance without any user data. Essentially attempt at running chromium in guest mode
 #alias tmpchrome="TMP_DIR=$RANDOM && chromium-browser --user-data-dir=$TMP_DIR --bwsi & rm -rf $TMP_DIR"
