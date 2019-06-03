@@ -7,7 +7,7 @@ VSCODE_PREFS_PATH=$(cd ../prefs/visual-studio-code; pwd)
 VIM_PREFS_PATH=$(cd ../prefs/vim; pwd)
 
 # Creates a symlink for user binaries in $HOME directory
-#ln -sf $(pwd)/bin $HOME
+ln -sf $(pwd)/bin $HOME
 
 # Creates symlinks for git dotfiles in $HOME directory
 ln -sf $GIT_PREFS_PATH/.gitaliases $HOME/.gitaliases
