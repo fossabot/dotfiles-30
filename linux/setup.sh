@@ -77,11 +77,13 @@ do_setup() {
 	case "$lsb_dist" in
 		ubuntu|debian|raspbian)
 			$sh_c './symlink-linux.sh'
+			$sh_c './config-git-linux.sh'
 			$sh_c './debian/setup.sh'
 			exit 0
 			;;
 		centos|fedora|rhel|ol|sles)
 			$sh_c './symlink-linux.sh'
+			$sh_c './config-git-linux.sh'
 			$sh_c './rhel/setup.sh'
 			exit 0
 			;;
