@@ -11,6 +11,7 @@ choco install -y `
 	keepass-plugin-keeotp `
     keepass-yet-another-favicon-downloader `
     keepass.install `
+    office-to-pdf `
     sharex `
 	signal `
     slack `
