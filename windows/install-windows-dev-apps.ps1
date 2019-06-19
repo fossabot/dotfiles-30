@@ -27,6 +27,4 @@ choco install -y `
 	vscode `
 	wireshark
 
-code --install-extension ms-vscode.powershell
-code --install-extension dotjoshjohnson.xml
-code --install-extension earshinov.sort-lines-by-selection
+Get-Content $env:APPDATA\Code\User\extensions.list | ForEach-Object { code --install-extension $_}

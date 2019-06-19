@@ -20,3 +20,5 @@ dnf install -y \
     ruby
     snapd
     vlc
+
+cat $HOME/.config/Code/User/extensions.list | xargs -n1 code --install-extension

@@ -22,6 +22,7 @@ mkdir -p $HOME/.config/Code/User
 chmod 755 $HOME/.config/Code/User
 ln -sf $VSCODE_PREFS_PATH/keybindings.json $HOME/.config/Code/User
 ln -sf $VSCODE_PREFS_PATH/settings.json $HOME/.config/Code/User
+ln -sf $VSCODE_PREFS_PATH/extensions.list $HOME/.config/Code/User
 
 # Creates symlink for .vimrc in $HOME directory
 ln -sf $VIM_PREFS_PATH/.vimrc $HOME/.vimrc
