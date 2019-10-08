@@ -4,5 +4,16 @@
     "git.enableSmartCommit": true,
     "git.autofetch": true,
     "git.confirmSync": false,
-    "terminal.integrated.fontFamily": "Liberation Mono"
+    "terminal.integrated.fontFamily": "Liberation Mono",
+    "files.associations": {
+        "*.json": "jsonc"
+    },
+    "files.autoSave": "afterDelay",
+    "yaml.format.enable": true,
+    "extensions.ignoreRecommendations": false,
+    "git-graph.fetchAvatars": true,
+    "python.jediEnabled": false,
+    "ruby.format": "rubocop",
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.intellisense": "rubyLocate"
 }
