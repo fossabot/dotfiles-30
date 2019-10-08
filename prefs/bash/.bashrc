@@ -48,7 +48,8 @@ function dcsh() {
 export -f dcsh
 
 alias tmpsh="docker run -it --rm ubuntu /bin/bash" # Disposable Ubuntu bash shell
-alias dockersay="docker run --rm docker/whalesay cowsay" # Disposable Whalesay
+alias tmpsh-fedora="docker run -it --rm fedora /bin/bash" # Disposable Fedora bash shell
+alias dockersay="docker run --rm docker/whalesay cowsay" # Disposable Whalesay, fun to run with fortune subshell ex. dockersay $(fortune hitchhiker)
 alias dsudo='docker run --rm -it -v="/:/opt" --name Docker_SU ubuntu /bin/bash -c "(apt-get update -y >/dev/null 2>&1; apt-get install vim.tiny -y >/dev/null 2>&1) & /bin/bash"' # Disposable shell that mounts root
 alias dc='docker-compose' # Simple alias for docker-compose
 alias dcu='docker-compose up --build -d' # Builds and brings up a detatched container using docker-compose
