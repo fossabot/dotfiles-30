@@ -29,6 +29,7 @@ brew install \
     ruby \
     go \
     python \
+    python3 \
     awscli 
 
 ## install fish shell
